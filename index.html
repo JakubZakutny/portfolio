@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jakub Zákutný – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta name="description" content="Portfólio Jakuba Zákutného – junior Java developer z Prešova.">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#about">O mne</a></li>
+      <li><a href="#projects">Projekty</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <header>
+      <div class="profile">
+        <div class="avatar"></div>
+        <h1>Jakub Zákutný</h1>
+        <p>Java vývojár • Technik • Milovník počítačov</p>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="card">
+        <h2><i class="fas fa-user"></i> O mne</h2>
+        <p>Som pracovitý, tímový hráč s logickým myslením a výbornými komunikačnými schopnosťami. Mám vášeň pre programovanie a neustále sa zlepšujem.</p>
+      </section>
+
+      <section class="card">
+        <h2><i class="fas fa-bullseye"></i> Kariérny cieľ</h2>
+        <p>Chcem sa zamestnať ako junior Java vývojár, kde môžem rozvíjať svoje schopnosti a prispieť tímu. Neustále sa učím nové technológie a zaujímam sa o vývoj backendových systémov.</p>
+      </section>
+
+      <section class="card">
+        <h2><i class="fas fa-tools"></i> Zručnosti</h2>
+        <ul>
+          <li><strong>Programovanie:</strong> Java, Spring, JavaScript, Python, React</li>
+          <li><strong>Web:</strong> HTML, CSS, Bootstrap</li>
+          <li><strong>Nástroje:</strong> IntelliJ, Git, Chrome DevTools</li>
+          <li><strong>Soft:</strong> Excel, WordPad, Administratíva, Copywriting</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="card">
+        <h2><i class="fas fa-code"></i> Moje projekty</h2>
+        <div class="project">
+          <h3>Todo App v Jave</h3>
+          <p>Jednoduchá desktopová aplikácia na správu úloh. Používa Swing, kolekcie, OOP.</p>
+          <a href="https://github.com/tvoj-nick/todo-java" target="_blank">Zobraziť na GitHube</a>
+        </div>
+        <div class="project">
+          <h3>Portfolio Webstránka</h3>
+          <p>Táto stránka napísaná v HTML + CSS ako ukážka mojich schopností.</p>
+          <a href="https://github.com/tvoj-nick/portfolio" target="_blank">Zobraziť na GitHube</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2><i class="fas fa-certificate"></i> Certifikáty</h2>
+        <ul>
+          <li>Java Junior Developer – IT Network (2025)</li>
+          <li>Úvod do JavaScriptu – freeCodeCamp</li>
+          <li>HTML & CSS – Learn2Code</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2><i class="fas fa-briefcase"></i> Pracovné skúsenosti</h2>
+        <ul>
+          <li><strong>2025:</strong> Rekvalifikačný kurz Java – IT Network</li>
+          <li><strong>2024:</strong> Cementáreň – VZV, miešanie materiálu</li>
+          <li><strong>2023–2024:</strong> JYSK – Picker</li>
+          <li><strong>2023:</strong> Arufel – Administratíva, marketing</li>
+          <li><strong>2021–2023:</strong> Arufel – Skladník, servis</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2><i class="fas fa-graduation-cap"></i> Vzdelanie</h2>
+        <p>Obchodná akadémia (2018 – 2022), Prešov</p>
+        <ul>
+          <li>Účtovníctvo, informatika, ekonomika, právo</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2><i class="fas fa-language"></i> Jazyky</h2>
+        <ul>
+          <li>Slovenský – C1</li>
+          <li>Anglický – B1</li>
+          <li>Český – B2</li>
+          <li>Ruský – A1</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="card contact">
+        <h2><i class="fas fa-envelope"></i> Kontakt</h2>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:jakub.zakutny@gmail.com">jakub.zakutny@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> +421 949 300 631</p>
+        <p><i class="fas fa-location-dot"></i> Prešov, Slovensko</p>
+        <p><i class="fas fa-id-card"></i> Narodený: 7. február 2003</p>
+        <p><i class="fas fa-car"></i> Vodičský preukaz: B</p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/tvoj-nick" target="_blank">GitHub</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/tvoj-nick" target="_blank">LinkedIn</a></p>
+      </section>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Jakub Zákutný – Vytvorené s ❤️
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
