@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jakub Zákutný – Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <meta name="description" content="Portfólio Jakuba Zákutného – junior Java developer z Prešova.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
   <nav>
     <ul>
       <li><a href="#about">O mne</a></li>
@@ -22,46 +29,48 @@
       <div class="profile">
         <div class="avatar"></div>
         <h1>Jakub Zákutný</h1>
-        <p>Java vývojár • Technik • Milovník počítačov</p>
+        <p>Java vývojár • Technik</p>
       </div>
     </header>
 
     <main>
-      <section id="about" class="card">
+      <section id="about" class="card" data-aos="fade-up">
         <h2><i class="fas fa-user"></i> O mne</h2>
-        <p>Som pracovitý, tímový hráč s logickým myslením a výbornými komunikačnými schopnosťami. Mám vášeň pre programovanie a neustále sa zlepšujem.</p>
+        <p>Som zodpovedný a samostatný junior Java vývojár s logickým myslením a silnými komunikačnými zručnosťami.</p>
+        <p>Mám vášeň pre programovanie, rád sa učím nové technológie a pracujem na zmysluplných projektoch.</p>
       </section>
 
-      <section class="card">
+      <section class="card" data-aos="fade-up">
         <h2><i class="fas fa-bullseye"></i> Kariérny cieľ</h2>
-        <p>Chcem sa zamestnať ako junior Java vývojár, kde môžem rozvíjať svoje schopnosti a prispieť tímu. Neustále sa učím nové technológie a zaujímam sa o vývoj backendových systémov.</p>
+        <p>Mojím cieľom je pracovať ako junior Java vývojár, kde môžem rozvíjať svoje znalosti a prispieť tímu svojou zodpovednosťou a chuťou učiť sa. Zaujímam sa najmä o vývoj backendových riešení.</p>
       </section>
 
-      <section class="card">
+      <section class="card" data-aos="fade-up">
         <h2><i class="fas fa-tools"></i> Zručnosti</h2>
         <ul>
-          <li><strong>Programovanie:</strong> Java, Spring, JavaScript, Python, React</li>
-          <li><strong>Web:</strong> HTML, CSS, Bootstrap</li>
-          <li><strong>Nástroje:</strong> IntelliJ, Git, Chrome DevTools</li>
-          <li><strong>Soft:</strong> Excel, WordPad, Administratíva, Copywriting</li>
+          <li><strong>Programovanie:</strong> Java (Spring), JavaScript (základy), Python (základy), React (základy)</li>
+          <li><strong>Web:</strong> HTML, CSS, Bootstrap, responzívny dizajn</li>
+          <li><strong>Databázy:</strong> Základy SQL</li>
+          <li><strong>Nástroje a technológie:</strong> IntelliJ IDEA, Git, GitHub, Chrome DevTools</li>
+          <li><strong>Soft Skills:</strong> Komunikácia, tímová práca, administratíva, copywriting, MS Excel</li>
         </ul>
       </section>
 
-      <section id="projects" class="card">
+      <section id="projects" class="card" data-aos="fade-up">
         <h2><i class="fas fa-code"></i> Moje projekty</h2>
         <div class="project">
-          <h3>Todo App v Jave</h3>
+          <h3>To Do App v Jave</h3>
           <p>Jednoduchá desktopová aplikácia na správu úloh. Používa Swing, kolekcie, OOP.</p>
-          <a href="https://github.com/tvoj-nick/todo-java" target="_blank">Zobraziť na GitHube</a>
+          <a href="https://jakubzakutny.github.io/To-Do-List-/" target="_blank">Zobraziť na GitHube</a>
         </div>
         <div class="project">
           <h3>Portfolio Webstránka</h3>
           <p>Táto stránka napísaná v HTML + CSS ako ukážka mojich schopností.</p>
-          <a href="https://github.com/tvoj-nick/portfolio" target="_blank">Zobraziť na GitHube</a>
+          <a href="https://github.com/JakubZakutny/portfolio" target="_blank">Zobraziť na GitHube</a>
         </div>
       </section>
 
-      <section class="card">
+      <section class="card" data-aos="fade-up">
         <h2><i class="fas fa-certificate"></i> Certifikáty</h2>
         <ul>
           <li>Java Junior Developer – IT Network (2025)</li>
@@ -70,7 +79,7 @@
         </ul>
       </section>
 
-      <section class="card">
+      <section class="card" data-aos="fade-up">
         <h2><i class="fas fa-briefcase"></i> Pracovné skúsenosti</h2>
         <ul>
           <li><strong>2025:</strong> Rekvalifikačný kurz Java – IT Network</li>
@@ -81,7 +90,7 @@
         </ul>
       </section>
 
-      <section class="card">
+      <section class="card" data-aos="fade-up">
         <h2><i class="fas fa-graduation-cap"></i> Vzdelanie</h2>
         <p>Obchodná akadémia (2018 – 2022), Prešov</p>
         <ul>
@@ -89,7 +98,7 @@
         </ul>
       </section>
 
-      <section class="card">
+      <section class="card" data-aos="fade-up">
         <h2><i class="fas fa-language"></i> Jazyky</h2>
         <ul>
           <li>Slovenský – C1</li>
@@ -99,25 +108,20 @@
         </ul>
       </section>
 
-      <section id="contact" class="card contact">
+      <section id="contact" class="card contact" data-aos="fade-up">
         <h2><i class="fas fa-envelope"></i> Kontakt</h2>
         <p><i class="fas fa-envelope"></i> <a href="mailto:jakub.zakutny@gmail.com">jakub.zakutny@gmail.com</a></p>
         <p><i class="fas fa-phone"></i> +421 949 300 631</p>
         <p><i class="fas fa-location-dot"></i> Prešov, Slovensko</p>
         <p><i class="fas fa-id-card"></i> Narodený: 7. február 2003</p>
         <p><i class="fas fa-car"></i> Vodičský preukaz: B</p>
-        <p><i class="fab fa-github"></i> <a href="https://github.com/tvoj-nick" target="_blank">GitHub</a></p>
-        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/tvoj-nick" target="_blank">LinkedIn</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/JakubZakutny" target="_blank">GitHub</a></p>
       </section>
     </main>
 
     <footer>
-      &copy; <span id="year"></span> Jakub Zákutný – Vytvorené s ❤️
+      &copy; <span id="year"></span> Jakub Zákutný – Last edit 4.7.2025
     </footer>
   </div>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
